@@ -21,3 +21,6 @@ sudo systemctl start kafka-consumer
 ```bash
 python3 producer.py
 ```
+## Turn on the dag
+## Successful execution
+![alt](https://github.com/ShreyasK2411/Scheduled-Streaming-using-Airflow/blob/aa7a808c75d1d7937505e2349ed311a333880c09/images/Screenshot%20(74).png?raw=True)
