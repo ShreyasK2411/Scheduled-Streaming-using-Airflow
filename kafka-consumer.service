@@ -1,0 +1,16 @@
+[Unit]
+Description = This service run the kafka consumer
+After = network.target
+ 
+[Service]
+Type = simple
+ExecStart = /usr/bin/python3 /home/talentum/kafka-project/consumer.py
+User = root
+Group = talentum
+Restart = on-failure
+SyslogIdentifier = consumer.logs
+RestartSec = 5
+TimeoutStartSec = infinity
+ 
+[Install]
+WantedBy = multi-user.target
